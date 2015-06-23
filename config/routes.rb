@@ -8,8 +8,6 @@ Rails.application.routes.draw do
 
   get "/", to: "welcome#index"
 
-  #need a "sign_in" path
-
   get "/sign_in", to: "sessions#new"
 
   post "/sessions", to: "sessions#create"

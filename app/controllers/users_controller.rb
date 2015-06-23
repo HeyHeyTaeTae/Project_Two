@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+	attr_accessor :user_id
 
 	def index
 		@users = User.all

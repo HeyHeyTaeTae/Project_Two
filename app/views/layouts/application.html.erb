@@ -8,8 +8,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<<<<<<< HEAD
 	<%= render partial: "layouts/navbar" %>
 
+=======
+	<% if @current_user != nil %>
+	<%= render partial: "layouts/navbar" %>
+	<% end %>
+	
+>>>>>>> e8e76d52da667b3e1ad8865a065eb01b36f1f86c
 	<div class="container">
 		
 		 <% if flash[:notice] %>
